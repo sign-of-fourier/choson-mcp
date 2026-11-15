@@ -1,0 +1,21 @@
+[project]
+name = "choson-mcp"
+version = "0.1.0"
+description = "MCP server for the Chosŏn conjoint API: run studies from Claude or any MCP client"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+dependencies = ["mcp>=1.20,<2", "httpx>=0.27"]
+
+[project.urls]
+Homepage = "https://quantecarlo.com"
+Documentation = "https://quantecarlo.com/api.md"
+Source = "https://github.com/sign-of-fourier/choson-mcp"
+
+[project.scripts]
+choson-mcp = "choson_mcp.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
